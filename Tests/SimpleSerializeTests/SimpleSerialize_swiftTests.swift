@@ -1,5 +1,5 @@
 import XCTest
-@testable import SimpleSerialize_swift
+@testable import SimpleSerialize
 
 extension Data {
     private static let hexAlphabet = "0123456789abcdef".unicodeScalars.map { $0 }

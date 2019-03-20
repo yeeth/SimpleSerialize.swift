@@ -1,5 +1,5 @@
 import XCTest
-@testable import SimpleSerialize_swift
+@testable import SimpleSerialize
 
 class SimpleSerializeRoundTripTests: XCTestCase {
     var encoder: SimpleSerializeEncoder!
