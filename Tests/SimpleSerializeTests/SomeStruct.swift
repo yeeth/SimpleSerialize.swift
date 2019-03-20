@@ -1,4 +1,4 @@
-struct Airport: Codable, Equatable {
+struct SomeStruct: Codable, Equatable {
     let B: UInt16
     let A: UInt8
     
@@ -7,8 +7,8 @@ struct Airport: Codable, Equatable {
         case A = 2
     }
 
-    static var example: Airport {
-        return Airport(
+    static var example: SomeStruct {
+        return SomeStruct(
             B: 2,
             A: 1
 

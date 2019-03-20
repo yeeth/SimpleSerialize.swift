@@ -8,21 +8,15 @@ class SimpleSerializeRoundTripTests: XCTestCase {
         self.encoder = SimpleSerializeEncoder()
     }
 
-    func testRoundTrip() {
-        let value = Airport.example
+    func testSimpleStruct() {
+        let value = SomeStruct.example
         let encoded = try! encoder.encode(value)
 
-        print("AC ", encoded.hexEncodedString())
-        print("EX ", "03000000020001")
         XCTAssertEqual(encoded.hexEncodedString(), "03000000020001")
 
     }
 
     static var allTests = [
-        ("testRoundTrip", testRoundTrip)
-//        ("testRoundTripArray", testRoundTripArray),
-//        ("testRoundTripDictionary", testRoundTripDictionary),
-//        ("testRoundTripDate", testRoundTripDate),
-//        ("testRoundTripDateWithNanoseconds", testRoundTripDateWithNanoseconds)
+        ("testSimpleStruct", testSimpleStruct)
     ]
 }
