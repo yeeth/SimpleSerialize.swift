@@ -1,0 +1,4 @@
+# file options
+
+--exclude Tests/SimpleSerializeTests/XCTestManifests.swift,Snapshots
+

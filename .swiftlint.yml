@@ -1,0 +1,13 @@
+included:
+  - Sources
+  - Tests
+excluded:
+  - Tests/SimpleSerializeTests/XCTestManifests.swift
+  - Package.swift
+  - Tests/LinuxMain.swift
+identifier_name:
+  excluded:
+    - id
+    - to
+disabled_rules:
+    - trailing_comma
